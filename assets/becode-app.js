@@ -72,7 +72,7 @@ for (i=0;i<dataTable1.length;i++){
 let chart = new dimple.chart(svg, data);
 chart.addCategoryAxis("x", "Année");
 chart.addMeasureAxis("y", "Infractions");
-chart.addSeries("Pays", dimple.plot.area);
+chart.addSeries("Pays", dimple.plot.line);
 chart.addLegend(60, 10, 500, 120, "right");
 chart.setBounds('50px', "150px", "80%", "70%"); 
 chart.draw();
@@ -125,7 +125,7 @@ FillTable2();
 let chart2 = new dimple.chart(svg2, data2);
 chart2.addCategoryAxis("x", "Année");
 chart2.addMeasureAxis("y", "Population");
-chart2.addSeries("Pays", dimple.plot.bar);
+chart2.addSeries("Pays", dimple.plot.line);
 chart2.addLegend(80, 10, 500, 120, "right");
 chart2.setBounds('50px', "150px", "80%", "70%"); 
 chart2.draw();
