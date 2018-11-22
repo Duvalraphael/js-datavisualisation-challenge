@@ -125,7 +125,7 @@ FillTable2();
 let chart2 = new dimple.chart(svg2, data2);
 chart2.addCategoryAxis("x", "Année");
 chart2.addMeasureAxis("y", "Population");
-chart2.addSeries("Pays", dimple.plot.line);
+chart2.addSeries("Pays", dimple.plot.bar);
 chart2.addLegend(80, 10, 500, 120, "right");
 chart2.setBounds('50px', "150px", "80%", "70%"); 
 chart2.draw();
